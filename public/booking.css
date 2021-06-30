@@ -1,0 +1,17 @@
+body{
+    background-color:darkturquoise;
+    text-align: center;
+    margin: 8rem 15rem;
+    display: relative;
+}
+
+.myform1{
+    
+    margin-top:3rem ;
+}
+
+input{
+    
+    margin-left : 3rem;
+    display: absolute;
+}

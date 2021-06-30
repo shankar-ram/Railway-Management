@@ -1,0 +1,13 @@
+<%- include('../partials/header.ejs') %>
+<section >
+    <div  style="margin-left: 30%;">
+    <form action="/ticket/cancel" method="post">
+        <label for="cancelTicket">Enter Ticket Number</label>
+        <input type="text" id="cancelTicket" name="cancelTicket">
+        <button type="submit" class="btn btn-primary">Cancel</button>
+        
+    </form>
+    </div>
+</section>
+<section>
+<%- include('../partials/footer.ejs') %>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Railway Reservation</title>
+     <!-- Css stylesheets -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="/home.css">
+ 
+     <!-- Bootstrap Scripts -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="logo">
+        <div class="container-fluid bar">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+            <a class="navbar-brand" href="">TakeATrip</a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse" >
+                
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <%if(user){%>
+                      <li class="nav-item">
+                        <a href="/info_form" class="nav-link">Book</a>
+                      </li>
+                      <li>
+                        <a href="/booked/confirmedBookings" class="nav-link">My Bookings</a>
+                      </li>
+                      <li>
+                        <a href="/ticket/cancel" class="nav-link">Cancel</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="/auth/logout" class="nav-link">Logout</a>
+                      </li>
+                    
+                    <%}else{%>
+                      <li class="nav-item">
+                        <a href="/register" class="nav-link">Register</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="/login" class="nav-link">Login</a>
+                      </li>
+                    <%}%>  
+                </ul>
+                
+            </div>
+        </nav>  
+        </div>
+    </section>
+
+    <section id="image">
+        <!-- <div class="row buttons">  
+            <div class="reg col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+              <a href="/register">
+                <button  class="btn btn-primary btn-lg entry-button">Register</button>
+             </a>
+            </div>
+            <div class="log col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+              <a href="/login">
+                <button  class="btn btn-primary btn-lg entry-button">Login</button>
+              </a>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- card -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="box">
+        <div class="container">
+     	    <div class="row ">
+			    	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               
+					    <div class="box-part text-center">
+                
+						    <div class="title">
+							    <h2>TakeATrip Train Booking Offers – Avail Best Deals on Train Tickets</h4>
+						    </div>
+                        
+						    <div class="text">
+							    <h3><span> Railway is the most affordable way to travel in India and as a trustworthy travel brand; EaseMyTrip understands the value of your money and desire to travel. To make your train ticket booking more convenient, we are pleased to tie up IRCTC. Customer can book IRCTC train tickets in the most convenient way with our website. The best thing is that you will get the cheapest train tickets for your preferred locations through EaseMyTrip as we don’t charge convenience fee train ticket booking as well. So, get ready for amazing offers on railway booking and plan your trip soon.</span></h3>
+						    </div>
+					    </div>
+				    </div>	 	
+	    	</div>		
+        </div>
+    </div>
+
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-left col-md-4 col-sm-6">
+          <p class="about">
+            <span><h2><strong>TakeATrip</strong></h2></span> 
+            Takeatrip is a one stop solution that furnishes an expanse of data-based travel discovery at your disposal. So get connected for an inclusive experience of Smart Bus booking, Food on Train service, Train Ticket booking & journey information   </p>
+          <div class="icons">
+            <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+            <a href="www.twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+            <a href="www.google.com"><i class="fa fa-google-plus"></i></a>
+            <a href="www.instagram.com"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-center col-md-4 col-sm-6">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span> 1st block,Rajajinagar </span> Bangalore, India</p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p> 080 - 333 777</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#"> support@takeatrip.com</a></p>
+          </div>
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+         <br>
+  
+          <p class="menu">
+            <a href="#"> Home</a> |
+            <a href="#"> About</a> |
+            <a href="#"> Services</a> |
+            <a href="#"> Contact</a>
+          </p>
+          
+        </div>
+        <p class="name"> TakeATrip  &copy; 2021</p>
+      </footer>
+
+      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+</body>
+</html>
